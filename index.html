@@ -8,12 +8,12 @@
 </head>
 <body>
 
-<!-- Preloader -->
-<div id="preloader">
-  <div class="loader"></div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
 </div>
 
-<div id="main-content" class="container fade-in">
+<div class="container" id="app">
 
   <header>
     <span class="badge">AI CREATOR</span>
@@ -21,52 +21,49 @@
     <p>AI видео уроки и создание AI видео</p>
   </header>
 
-  <section class="card slide-up">
+  <section class="card">
     <h2>🎥 AI видео урок</h2>
     <p>Короткий урок по искусственному интеллекту</p>
     <div class="price">5,500 ֏</div>
   </section>
 
-  <section class="card slide-up delay">
+  <section class="card">
     <h2>🤖 Создание AI видео</h2>
     <p>AI видео для Instagram / Reels / TikTok</p>
     <div class="price">2,000 ֏</div>
   </section>
 
-  <section class="card slide-up delay2">
+  <section class="card">
     <h2>💳 Оплата через IDBank</h2>
-    <p>Нажмите на QR, чтобы увеличить</p>
-    <a href="#qr-modal">
-      <img src="image/qr-idbank.png" alt="IDBank QR" class="qr">
-    </a>
-    <p class="small">После оплаты заполните заказ ниже</p>
+    <p>Отсканируйте QR-код</p>
+    <img src="image/qr-idbank.png" class="qr" alt="IDBank QR">
+    <p class="small">После оплаты заполните форму ниже</p>
   </section>
 
-  <!-- QR modal -->
-  <div id="qr-modal" class="qr-modal">
-    <a href="#" class="qr-close">×</a>
-    <img src="image/qr-idbank.png" alt="QR large" class="qr-large">
-  </div>
+  <section class="card">
+    <h2>📝 Заказ AI видео</h2>
 
-  <!-- ORDER FORM -->
-  <section class="card slide-up delay3">
-    <h2>🎬 Заказ AI видео</h2>
-    <p>Опишите видео, прикрепите фото и укажите оплату</p>
+    <!-- ✅ САМЫЙ НАДЁЖНЫЙ СПОСОБ -->
+    <form action="mailto:anahitgabrielyaannn@gmail.com" method="POST" enctype="text/plain">
 
-    <form id="order-form" action="https://formspree.io/f/mbdknqlv" method="POST" enctype="multipart/form-data">
       <input type="text" name="Name_Surname" placeholder="Имя и фамилия" required>
+
       <input type="tel" name="Phone" placeholder="Номер телефона" required>
-      <textarea name="message" placeholder="Опишите видео" rows="4" required></textarea>
+
       <select name="Payment_status" required>
         <option value="">Оплата</option>
-        <option value="Оплатил(а)">Оплатил(а)</option>
-        <option value="Не оплатил(а)">Не оплатил(а)</option>
+        <option value="PAID">Оплатил(а)</option>
+        <option value="NOT_PAID">Не оплатил(а)</option>
       </select>
-      <input type="file" name="photo" accept="image/*" required>
+
+      <textarea name="Message" rows="4" placeholder="Опишите AI видео" required></textarea>
+
       <button type="submit" class="btn">Отправить заказ</button>
     </form>
 
-    <p class="small">После отправки мы свяжемся с вами</p>
+    <p class="small">
+      После нажатия откроется почта для отправки
+    </p>
   </section>
 
   <footer>
