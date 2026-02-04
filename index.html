@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI Creator by annyyyaann</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Creator by annyyyaann</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
   <div class="loader"></div>
 </div>
 
-<div class="container fade-in" id="main-content">
+<div id="main-content" class="container fade-in">
 
   <header>
     <span class="badge">AI CREATOR</span>
@@ -24,26 +24,25 @@
   <section class="card slide-up">
     <h2>🎥 AI видео урок</h2>
     <p>Короткий урок по искусственному интеллекту</p>
-    <div class="price">5500 ֏</div>
+    <div class="price">5,500 ֏</div>
   </section>
 
   <section class="card slide-up delay">
     <h2>🤖 Создание AI видео</h2>
     <p>AI видео для Instagram / Reels / TikTok</p>
-    <div class="price">6600 ֏</div>
+    <div class="price">2,000 ֏</div>
   </section>
 
   <section class="card slide-up delay2">
     <h2>💳 Оплата через IDBank</h2>
     <p>Нажмите на QR, чтобы увеличить</p>
-
     <a href="#qr-modal">
       <img src="image/qr-idbank.png" alt="IDBank QR" class="qr">
     </a>
-
     <p class="small">После оплаты заполните заказ ниже</p>
   </section>
 
+  <!-- QR modal -->
   <div id="qr-modal" class="qr-modal">
     <a href="#" class="qr-close">×</a>
     <img src="image/qr-idbank.png" alt="QR large" class="qr-large">
@@ -56,19 +55,14 @@
 
     <form id="order-form" action="https://formspree.io/f/mbdknqlv" method="POST" enctype="multipart/form-data">
       <input type="text" name="Name_Surname" placeholder="Имя и фамилия" required>
-
       <input type="tel" name="Phone" placeholder="Номер телефона" required>
-
       <textarea name="message" placeholder="Опишите видео" rows="4" required></textarea>
-
       <select name="Payment_status" required>
         <option value="">Оплата</option>
         <option value="Оплатил(а)">Оплатил(а)</option>
         <option value="Не оплатил(а)">Не оплатил(а)</option>
       </select>
-
       <input type="file" name="photo" accept="image/*" required>
-
       <button type="submit" class="btn">Отправить заказ</button>
     </form>
 
@@ -80,8 +74,6 @@
   </footer>
 
 </div>
-
-<audio id="confirm-sound" src="sounds/confirm.mp3"></audio>
 
 <script src="index.js"></script>
 </body>
